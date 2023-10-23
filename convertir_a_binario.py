@@ -5,7 +5,7 @@ Inserta el encabezado aquí y escribe tu código abajo
 # Declaraciones
 binario = ""
 # Entradas
-entrada = float(input("Introduzca un número: "))
+entrada = int(input("Introduzca un número: "))
 
 # Proceso
 for digito in entrada:
