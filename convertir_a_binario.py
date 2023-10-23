@@ -3,13 +3,16 @@ Inserta el encabezado aquí y escribe tu código abajo
 """
 
 # Declaraciones
-CONSTANTE = valor
-
+binario = ""
 # Entradas
-entrada = input()
+entrada = float(input("Introduzca un número: "))
 
 # Proceso
-
+for digito in entrada:
+    division = entrada // 2
+    cociente = division // (entrada % 2)
+    cociente0 = (entrada % cociente == 0)
+    binario += cociente
 
 # Salidas
-print(salida)
+print(f"El número {entrada} en binario es {binario}")
