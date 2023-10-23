@@ -1,18 +1,17 @@
 """
 Inserta el encabezado aquí y escribe tu código abajo
 """
-
-# Declaraciones
+#Declaraciones
 binario = ""
-# Entradas
+
+#Entradas
 entrada = int(input("Introduzca un número: "))
 
 # Proceso
-for digito in entrada:
-    division = entrada // 2
-    cociente = division // (entrada % 2)
-    cociente0 = (entrada % cociente == 0)
-    binario += cociente
+while entrada > 0:
+    residuo = entrada % 2
+    binario = str(residuo) + binario
+    entrada = entrada // 2
 
-# Salidas
-print(f"El número {entrada} en binario es {binario}")
+# Salida
+print(f"El número en binario es: {binario}")
